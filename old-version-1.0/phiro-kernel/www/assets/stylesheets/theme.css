@@ -1,0 +1,262 @@
+html, body {padding: 0; margin: 0 auto; font-size: 100%; color: #2f2f2f; font-family: "Open Sans", Arial, sans-serif; font-weight: 100; }
+#clear, .clear {clear: both !important;}
+#break, .break {clear: both !important; padding-bottom: 20px !important;}
+a, i, p {text-decoration: none; transition-duration: 0.2s; transition-property: color;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, a, .icon, table, th, td, thead, tfooter, tbody, tr, ol, ul, li, div, span, .vc_figure {padding: 0; margin: 0; font-size: 100%; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight: 100; }
+h1, .h1 {font-size: 350%; }
+h2, .h2 {font-size: 300%; }
+h3, .h3 {font-size: 250%; }
+h4, .h4 {font-size: 200%; }
+h5, .h5 {font-size: 150%; }
+h6, .h6 {font-size: 125%; }
+
+.display-none {display: none; }
+
+.opacity-0 {opacity: 0;}
+
+.container {width: 1280px !important; padding: 0 calc(50% - 640px); margin: 0; float: left; position: relative; z-index: 3; }
+
+.phiro-overlay {
+    padding: 0;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transform: translate(-100%, -100%);
+    background: rgba(0,0,0,0.4);
+}
+
+.phiro-overlay .container {
+    padding: 0;
+    margin: 0 calc(50% - 640px);
+    overflow-y: auto;
+    height: 100%;
+}
+
+.phiro-overlay .content {
+    position: absolute;
+    z-index: 5;
+    width: calc(100% - 80px);
+    padding: 40px;
+    background: #fff;
+    transition-duration: 0.4s;
+    transition-property: top;
+}
+
+input, .input {
+    display: block;
+    padding: 5px 10px;
+    height: auto;
+    line-height: auto;
+    border: 1px solid #afafaf;
+    background: #fafafa;
+    color: #2f2f2f;
+    width: 100%;
+    border-radius: 4px;
+    font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+    font-size: 100%;
+    transition-property: background, color;
+    transition-duration: 0.2s;
+}
+
+ul {
+    list-style: circle;
+    font-size: 100%;
+    color: #2f2f2f;
+    padding-left: 40px;
+}
+
+.button {width: auto; height: auto; padding: 10px 20px; color: #fff; border-radius: 4px; transition-duration: 0.2s; 
+transition-property: color, background; position: relative; box-shadow: 0 0 10px rgba(28,36,43,.2); }
+.button.small { font-size: 100%; padding: 5px 10px; }
+.button:hover {background: #fff; color: #2f2f2f; }
+.button.black {background: #3f3f3f; }
+.button.black:hover {background: #0f0f0f; }
+.button.red {background: #af2f2f; }
+.button.red:hover { background: #cf2f2f; }
+.button.violet {background: #4f2f8f;}
+.button.violet:hover {background: #6f4faf;}
+.button.green {background: #2faf2f;}
+.button.green:hover {background: #2fcf2f;}
+
+.table {display: table; width: 100%; font-size: 100%; margin-top: 20px;}
+.table .row {display: table-row;}
+.table .row .column {display: table-cell; vertical-align: middle; color: #6f6f6f; padding: 25px 0px 5px 5px;}
+.table .row .column i {font-size: 100%;}
+.table .row .column.heading { font-size: 100%; font-weight: bold; color: #cfcfcf; border-bottom: 1px solid #cfcfcf; padding-bottom: 10px;}
+.table .row .column .button {margin:  0 !important; font-size: 100% !important; float: none !important; }
+.table .row .column.add { padding: 10px 0; background: #f0fff0; text-align: center; color: #2faf2f; border-top: 1px dashed #2faf2f; border-bottom: 1px dashed #2faf2f;
+transition-property: background; transition-duration: 0.2s; cursor: pointer;}
+.table .row .column.add i {font-size: 200%; vertical-align: middle; display: inline-block;}
+.table .row .column.add p {color: #2faf2f; vertical-align: middle; display: inline-block; margin-left: 10px; padding:  0;}
+.table .row .column.add:hover { background: #f5fff5; }
+.table .row .column.add:hover i, .table .row .column.add:hover  p { color: #2fcf2f; }
+.table .row .column .status {
+    padding: 2px 4px;
+    background: #2fcf2f;
+    opacity: 0;
+    color: #fff;
+    font-size: 80%;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.phiro-setup {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #f0f0f0;
+    z-index: 1;
+}
+
+.phiro-setup .container {
+    padding: 0;
+    margin: 0 calc(50% - 640px);
+    overflow-y: auto;
+    height: 100%;
+}
+
+.phiro-setup .content {
+    position: absolute;
+    z-index: 5;
+    width: calc(100% - 80px);
+    padding: 40px;
+    background: #fff;
+    transition-duration: 0.4s;
+    transition-property: top;
+}
+
+.phiro-setup .content .heading {
+    padding-bottom: 20px;
+}
+
+.phiro-setup .content p, .phiro-setup .content ul {
+    padding-top: 20px;
+    color: #6f6f6f;
+    font-size: 100%;
+}
+
+.phiro-setup .content .steps {
+	width: 100%;
+}
+
+.phiro-setup .content .steps.labels p {
+	display: inline-block;
+    padding: 0px;
+	margin-right: 20px;
+    text-transform: uppercase;
+    color: #cfcfcf;
+	transition-duration: 0.2s;
+	transition-property: color, border;
+	border-bottom: 2px solid transparent;
+    font-size: 100%;
+}
+
+.phiro-setup .content .steps.labels p b {
+    font-weight: bold;
+	font-size: 120%;
+}
+
+.phiro-setup .content .steps.labels p.current {
+	color: #2f2f2f;
+	border-color: #6f4faf;
+}
+
+.phiro-setup .content .steps .button {
+    margin-top: 20px;
+    color: #fff;
+    float: left;
+    font-size: 100%;
+    transition-property: color, background;
+    transition-duration: 0.2s;
+}
+
+.phiro-setup .content .steps .button.forward {
+    float: right;
+}
+
+.phiro-setup .content .steps .table .row.on-action .column { color: #cfcfcf; }
+.phiro-setup .content .steps .table .row.on-action .column .button {background: #cfcfcf;}
+.phiro-setup .content .steps .table .row.on-error .column .status {background: #cf2f2f;}
+
+.phiro-setup .content input {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    background: #fafafa;
+    padding: 10px;
+    color: #6f6f6f;
+}
+
+.phiro-setup .content .field {width: 100%; float: left; margin-top: 20px; z-index: 1; position: relative; }
+.phiro-setup .content .field p {color: #6f6f6f; margin-bottom: 4px; font-size: 80%; padding: 0;}
+.phiro-setup .content .field.w50p.left {width: calc(50% - 20px); margin-right: 20px; }
+.phiro-setup .content .field.w50p.right {width: calc(50% - 20px); margin-left: 20px;}
+
+.phiro-setup .content .field.on-error input {
+    border-color: #fff0f0;
+    background: #fff8f8;
+    color: #cf2f2f;
+}
+
+.phiro-setup .content .field .error {
+	position: absolute;
+	bottom: -7px;
+	display: none;
+	right: 5px;
+	padding: 2px 4px;
+	background: #cf2f2f;
+	color: #fff;
+	font-size: 80%;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	opacity: 1;
+}
+
+.sweet-alert fieldset, .sweet-alert .sa-error-container, .sweet-alert .sa-button-container {
+    display: none !important;
+}
+
+.sweet-alert h2 {
+    font-size: 150% !important;
+    line-height: 30px !important;
+    margin: 0px !important;
+    margin-top: 20px !important;
+}
+
+.sweet-alert p {
+    font-size: 125%;
+    color: #6f6f6f;
+    padding: 0px !important;
+    margin: 0px  !important;
+    margin-top: 20px !important;
+}
+
+.sweet-alert[data-has-cancel-button="false"] .sa-button-container, 
+.sweet-alert[data-has-cancel-button="true"] .sa-button-container, 
+.sweet-alert[data-has-confirm-button="true"] .sa-button-container, 
+.sweet-alert[data-has-confirm-button="false"] .sa-button-container {
+    display: block !important;
+}
+
+.sweet-alert[data-has-confirm-button="false"][data-has-cancel-button="false"] {
+    padding: 0 !important;
+}
+
+.sweet-alert button {
+    transition-duration: 0.2s;
+    transition-property: background;
+}
+
+.sweet-alert button.confirm {
+    background: #2f2f2f !important;
+}
+
+.sweet-alert button.confirm:hover {
+    background: #6f4faf !important;
+    
+}
